@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/../workspace/akkademydb-client/akkademydb-client.iml" filepath="$PROJECT_DIR$/../workspace/akkademydb-client/akkademydb-client.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../workspace/akkademydb-messages/akkademydb-messages.iml" filepath="$PROJECT_DIR$/../workspace/akkademydb-messages/akkademydb-messages.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../workspace/akkademydb-server/akkademydb-server.iml" filepath="$PROJECT_DIR$/../workspace/akkademydb-server/akkademydb-server.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../workspace/akka-reverse-string/reverse-string.iml" filepath="$PROJECT_DIR$/../workspace/akka-reverse-string/reverse-string.iml" />
+    </modules>
+  </component>
+</project>
