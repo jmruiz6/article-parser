@@ -1,2 +1,3 @@
-com\test\akka\App.class
-com\akkademy\parser\AskDemoArticleParser.class
+com/akkademy/parser/tell/ArticleParser.class
+com/akkademy/parser/ask/ArticleParser.class
+com/akkademy/parser/tell/ArticleParser$1MyActor.class

@@ -1,4 +1,4 @@
-package com.akkademy.parser;
+package com.akkademy.parser.ask;
 
 import akka.actor.AbstractActor;
 import akka.actor.ActorRef;
@@ -18,15 +18,15 @@ import java.util.concurrent.CompletionStage;
 import static akka.pattern.Patterns.ask;
 import static scala.compat.java8.FutureConverters.toJava;
 
-public class AskDemoArticleParser extends AbstractActor {
+public class ArticleParser extends AbstractActor {
 
     private final ActorSelection cacheActor;
     private final ActorSelection httpClientActor;
     private final ActorSelection articleParseActor;
     private final Timeout timeout;
 
-    public AskDemoArticleParser(String cacheActorPath, String httpClientActorPath,
-                                String articleParseActorPath, Timeout timeout) {
+    public ArticleParser(String cacheActorPath, String httpClientActorPath,
+                         String articleParseActorPath, Timeout timeout) {
         this.cacheActor = getContext().actorSelection(cacheActorPath);
         this.httpClientActor = getContext().actorSelection(httpClientActorPath);
         this.articleParseActor = getContext().actorSelection(articleParseActorPath);
