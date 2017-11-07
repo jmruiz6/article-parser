@@ -9,9 +9,7 @@ import com.akkademy.message.parse.ParseHtmlArticle;
 import message.GetRequest;
 import message.SetRequest;
 import org.jboss.netty.handler.codec.http.HttpResponse;
-import scala.concurrent.duration.Duration;
 
-import java.util.ArrayList;
 import java.util.concurrent.TimeoutException;
 
 public class ArticleParser extends AbstractActor {
@@ -32,10 +30,6 @@ public class ArticleParser extends AbstractActor {
     @Override
     public Receive createReceive() {
         return ReceiveBuilder.create()
-                .match(ActorRef.class, message -> {
-                    this.cacheActor = message;
-                    getSender().tell("done", getSelf());
-                })
                 .match(ParseArticle.class, message -> {
                     ActorRef extraActor = buildExtraActor(sender(),
                             message.getUrl());
